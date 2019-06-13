@@ -8,7 +8,7 @@ Development code for the plotting of AVHRR Easy FCDR L1C orbits from [H2020 FIDU
 
 ## Contents
 
-* `plot_l1c.py` - main script to be run with Python 3.6
+* `plot_l1c.py` - main script to be run with Python 3.6+
 
 The first step is to clone the latest plot_l1c code and step into the check out directory: 
 
@@ -29,8 +29,22 @@ The code should run with the [standard CPython](https://www.python.org/downloads
 
 Run with:
 
-    $ python3 plot_l1c.py l1c.nc
-        
+    $ python plot_l1c.py l1c.nc <options>
+
+    options: proj varstr vmin vmax
+    example: $ python plot_l1c.py l1c.nc 0 Ch4 250 310
+
+    proj == 0 -> PlateCarree
+    proj == 1 -> Molleweide
+    proj == 2 -> Robinson
+    proj == 3 -> EqualEarth
+    proj == 4 -> Geostationary
+    proj == 5 -> GoodeHomolosine
+    proj == 6 -> EuroPP
+    proj == 7 -> NorthPolarStereo
+    proj == 8 -> SouthPolarStereo
+    proj == 9 -> LambertConformal
+           
 ### l1c.nc
 
 * `l1c.nc` - netCDF-4 file containing latitude, longitude and data variable to be plotted
@@ -43,5 +57,5 @@ The code is distributed under terms and conditions of the [MIT license](https://
 
 ## Contact information
 
-* Michael Taylor (michael.taylor@reading.ac.uk)
+* [Michael Taylor](https://patternizer.github.io)
 
