@@ -61,6 +61,9 @@ def plot_orbit_var(lat, lon, var, vmin, vmax, projection, filestr, titlestr, var
     if projection == 'southpolarstereo':
         p = ccrs.SouthPolarStereo()
         threshold = 0
+    if projection == 'lambertconformal':
+        p = ccrs.LambertConformal(central_longitude=0)
+        threshold = 0
 
     ax = plt.axes(projection=p)    
     ax.stock_img()
