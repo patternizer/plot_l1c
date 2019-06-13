@@ -4,7 +4,7 @@
 
 Development code for the plotting of AVHRR Easy FCDR L1C orbits from [H2020 FIDUCEO](https://fiduceo.eu).
 
-![image](https://user-images.githubusercontent.com/5902974/59455595-6ebad300-8e0c-11e9-9143-c1b73daa5ba8.png)
+![image](https://user-images.githubusercontent.com/5902974/59461906-68335800-8e1a-11e9-8217-f60a09ecdfee.png)
 
 ## Contents
 
